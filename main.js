@@ -16,7 +16,7 @@ const logInputCurrentTimeAndWeather = async locationsInput => {
 
     // weather API call
     const response = await axios.get(
-      `https://api.weatherstack.com/current?access_key=${key}&query=${locationsInput}`
+      `http://api.weatherstack.com/current?access_key=${key}&query=${locationsInput}`
     );
     // destructure API response
 
@@ -44,7 +44,7 @@ const logInputCurrentTimeAndWeather = async locationsInput => {
     let output = `
     
     <li><img id="weather-icon" src="${weather_icons}"></li>
-    <li>Humidity: ${weather_descriptions}</li>
+    <li>Weather Description: ${weather_descriptions}</li>
     <li>Name: ${name}</li>
     <li> Country: ${country} </li>
     <li>Local Time: ${localtime}</li>
