@@ -1,4 +1,4 @@
-const key = "43f95659e0013b1364a6bd64926f8e0c";
+const key = "";
 let loader = document.getElementById("loader");
 let isLoaded = false;
 let errorMsg = document.querySelector("#errorMsg");
